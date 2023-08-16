@@ -1,4 +1,4 @@
-    ### <u>Relational Database</u>
+### <u> Relational Database </u>
 
 A relational database stores data in tables composed of rows and columns. In a relational database, data is contained within a table, which is then linked to data contained within other tables through the use of unique identifying keys. Specifically, relationships between tables are formed when a primary key, which uniquely identifies a row in one table, connects with a foreign key identifying a row of data in another table.
 
