@@ -1,5 +1,13 @@
 # node
 
+### Model View Controller - MVC
+
+It is a way to organize your code.
+
+- Model: Database operation such as insert, update, delete.
+- View: End user GUI through which user can interact with system i.e. HTML,CSS etc.
+- Controller : Contains business logic and it is a bridge between model and view.
+
 ### HTTP Module
 
 - The HTTP module can create an HTTP server that listens to server ports and gives a response back to the
@@ -35,3 +43,4 @@ You can install a specific version of a package, by running **npm install _packa
 When you run a package using NPX, it searches for the package in the local and global registry, and then it runs the package.
 
 If the package is not already installed, NPX downloads the package files and installs the package, but it will only cache the files instead of saving it.
+
