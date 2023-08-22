@@ -2,10 +2,10 @@
 const dbConnect = require("./mongodb_connection");
 
 const update = async () => {
-  let data = await dbConnect();
+  const data = await dbConnect();
   // updateOne() and updateMay() are query function in mongodb.
   // update function takes in to object - 1st - condition(i.e. where), 2nd - the property to update.
-  let result = await data.updateOne(
+  const result = await data.updateOne(
     { brand: "oneplus" },
     { $set: { price: 650 } }
   );

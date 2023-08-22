@@ -9,23 +9,23 @@ app.use(express.json());
 
 // get request route.
 app.get("/", async (req, res) => {
-  let data = await dbConnect();
+  const data = await dbConnect();
   data = await data.find({}).toArray();
   res.send(data);
 });
 
 // post request route.
 app.post("/", async (req, res) => {
-  let data = await dbConnect();
-  let result = await data.insertOne(req.body);
+  const data = await dbConnect();
+  const result = await data.insertOne(req.body);
   res.send(result);
 });
 
 // put method route.
 app.put("/:name", async (req, res) => {
-  let data = await dbConnect();
+  const data = await dbConnect();
   // argument in updateOne() consists of 1.condition -> 2.update information.
-  let result = await data.updateOne(
+  const result = await data.updateOne(
     { name: req.params.name },
     { $set: { price: 500 } }
   );
@@ -34,8 +34,8 @@ app.put("/:name", async (req, res) => {
 
 // delete method route.
 app.delete("/:id", async (req, res) => {
-  let data = await dbConnect();
-  let result = await data.deleteOne({
+  const data = await dbConnect();
+  const result = await data.deleteOne({
     _id: new mongodb.ObjectId(req.params.id),
   });
   res.send(result);

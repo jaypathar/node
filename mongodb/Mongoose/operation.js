@@ -17,7 +17,7 @@ const main = async () => {
   const ProductsModel = mongoose.model("products", ProductSchema);
 
   // inserting data.
-  let data = new ProductsModel({
+  const data = new ProductsModel({
     name: "Note Pro",
     price: 500,
     brand: "MI",
@@ -25,7 +25,7 @@ const main = async () => {
   });
 
   // save data to  database.
-  let result = await data.save();
+  const result = await data.save();
 
   console.log(result);
 };
