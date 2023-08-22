@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      h1 {
+        color: #ff6f61;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      input[type="text"], input[type="password"], input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        background-color: #ff6f61;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+      }
+      label {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        color: #666;
+        font-size: 0.8rem;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      a {
+        color: red;
+      }
+      a:hover, a:visited {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Login Page</h1>
+      <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Name" required>
+        <input type="password" name="password" placeholder="password" required>
+        <input type="submit" value="Log in">
+      </form>
+      <a href="signup">Create an account</a>
+    </div>
+  </body>
+</html>
