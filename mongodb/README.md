@@ -33,6 +33,7 @@ ORM is Object Relational Mapping, basically a technique to query or perform CRUD
   - Mikro ORM
   - TypeORM
   - Waterline etc.
+  - knex
 
 ### <u>ODM-Object Document Mapping</u>
 
