@@ -8,12 +8,17 @@ Routing refers to determining how an application responds to a client request to
   - PUT : used to modify the data on the server.
   - DELETE :  used to delete the data on the server. 
 
-- Other avilable methods: 
-  - PATCH :used to modify part of the data on server.
+- less frequently used HTTP methods are
+  - PATCH : used to modify part of the data on server.
   - HEAD: asks for a response identical to a GET request, but without the response body.
   - OPTIONS: describes the communication options for the target resource.
   - CONNECT: establishes a network connection to a web server.
   - TRACE: echoes back the received request so that a client can see what (if any) changes or additions have been made by intermediate servers.
+  - LINK : links an existing object to the specified object. 
+  - UNLINK : removes link (or other meta-) information from an object.
+  - COPY: used to make a copy of a resource on the server.
+  - LOCK: used to lock a resource on the server to prevent other users from modifying it.
+  - UNLOCK: The UNLOCK method is used to unlock a resource on the server that has previously been locked.
 
 Route take the following definition:
 
