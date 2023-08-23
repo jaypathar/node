@@ -11,6 +11,7 @@
 - Use Passport.js to implement a basic authentication system in your application.
 - Use Mongoose to perform CRUD operations on a MongoDB database.
 - Use Mongoose to perform CRUD operations on a MongoDB database. (Aggregation)
+- Create API documentation using swagger UI for APIs that perform CRUD operation in mongodb.
 - Write a Node.js program that encrypts a string using the AES-256-CBC encryption algorithm and then decrypts it back to its original form.
 - Use the fs module to read from and write to a file. Use the path module to work with file paths.
 - Create an API using Express.js that handles CRUD operations on a certain resource (e.g. a list of tasks).
