@@ -51,3 +51,28 @@ Resolver is a collection of functions that generate response for a GraphQL query
 ### GraphQL Operation
 
 A GraphQL operation can either be a read or a write operation. A GraphQL **query** is used to read or fetch values while a **mutation** is used to write or post values.
+
+**If queries are the GraphQL equivalent to GET calls in REST, then mutations represent the state-changing methods in REST (like DELETE, PUT, PATCH, etc).**
+
+A **query** to fetch all the employees might look like this:
+
+```graphql
+query GetAllEmployees {
+  employee {
+    name
+    employeeType
+  }
+}
+```
+
+And then a **mutation** that adds a new Employee might look a little something like this:
+
+```graphql
+mutation AddNewEmployee($name: String!, $employeeType: employeeType) {
+  addEmployee(name: $name, employeeType: $employeeType) {
+    id
+    name
+    employeeType
+  }
+}
+```
