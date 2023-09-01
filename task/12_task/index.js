@@ -171,7 +171,6 @@ app.put("/update", async (req, res) => {
  *         description: Internal server error
  */
 app.delete("/delete/:id", async (req, res) => {
-  console.log(req.params.id);
   const result = await deleteNote(req.params.id);
   res.send(result);
 });

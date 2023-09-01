@@ -255,29 +255,3 @@ app.delete("/employee/:id", async (req, res) => {
 
 // listening on port.
 app.listen(5000);
-
-// New Data.
-
-// {
-//   "id": "11",
-//   "name": "Mark Johnson",
-//   "email": "markjohnson@example.com",
-//   "phone_no": "555-555-5565",
-//   "salary": "65000.00"
-// }
-
-// {
-//   "id": "12",
-//   "name": "Karen Lee",
-//   "email": "karenlee@example.com",
-//   "phone_no": "555-555-5566",
-//   "salary": "70000.00"
-// }
-
-// {
-//   "id": "13",
-//   "name": "Tom Smith",
-//   "email": "tomsmith@example.com",
-//   "phone_no": "555-555-5567",
-//   "salary": "75000.00"
-// }
