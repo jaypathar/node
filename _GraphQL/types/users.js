@@ -9,7 +9,7 @@ const Users = `
   }
 
   type Query {
-    getAllUsers: [Users]
+    getUsers: [Users]
   }
 `;
 
