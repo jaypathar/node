@@ -6,18 +6,12 @@ function getWeatherData() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        // extract the relevant weather data.
-        const temperature = data.current.temp_c;
-        const humidity = data.current.humidity;
-        const wind_speed = data.current.wind_kph;
-        const location = data.location.name;
-
-        // return an object containing the weather data variables.
+        // return an object containing the required weather data properties.
         return {
-          temperature,
-          humidity,
-          wind_speed,
-          location,
+          temperature: data.current.temp_c,
+          humidity: data.current.humidity,
+          wind_speed: data.current.wind_kph,
+          location: data.location.name,
         };
       })
       // print if any error.
