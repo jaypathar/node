@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
   return res.sendFile(path.resolve("./public/index.html"));
 });
 
-// listen on port 9000.
+// listen on port.
 server.listen(port, () => {
   console.log("Listening on port");
 });
