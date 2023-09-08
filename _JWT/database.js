@@ -1,9 +1,10 @@
 // import the 'mongoose' library
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 // connect to the MongoDB database.
 mongoose
-  .connect("mongodb://127.0.0.1:27017/myapp", {
+  .connect(process.env.DATABASE_CONNNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
