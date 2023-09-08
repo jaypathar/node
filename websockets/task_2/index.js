@@ -9,6 +9,8 @@ const server = http.createServer(app);
 // import the Socket.io Server class.
 const { Server } = require("socket.io");
 
+require("dotenv").config();
+const port = process.env.PORT;
 // create a Socket.io instance and bind it to the HTTP server.
 const io = new Server(server);
 
@@ -35,6 +37,6 @@ app.get("/", (req, res) => {
 });
 
 // listen on port 9000.
-server.listen(9000, () => {
-  console.log("Listening on port 9000...");
+server.listen(port, () => {
+  console.log("Listening on port");
 });
