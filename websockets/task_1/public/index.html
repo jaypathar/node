@@ -26,11 +26,8 @@
 
             // add a 'click' event listener to the send button.
             sendBtn.addEventListener('click', () => {
-                // get the message from the input field.
-                const message = messageInput.value;
-
                 // emit a custom 'user-message' event to the server with the message.
-                socket.emit('user-message', message);
+                socket.emit('user-message', messageInput.value);
 
                 // reset the input field.
                 messageInput.value = '';
